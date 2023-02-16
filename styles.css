@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+#parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./img/stars.jpg);
+}
+
+#timer {
+  padding-bottom: 20px;
+  font-size: 50px;
+  color: lightslategrey;
+}
+
+#start-timer {
+  background-color: transparent;
+  color: lavender;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+#start-timer:hover {
+  color: lightslategrey;
+  transition: 0.7s;
+}
+#show-prediction {
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: lavender;
+}
+
+#show-prediction:hover {
+  color: lightslategrey;
+  transition: 0.7s;
+}
+
+button:not(.active) {
+  display: none;
+}
+
+#text-prediction {
+  font-size: 30px;
+  color: ghostwhite;
+}
